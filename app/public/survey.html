@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"></head>
-<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <body>
     
     <div class="container">
         <div class="jumbotron">
@@ -16,16 +19,45 @@
     </div>
 
     <div class="container">
+            <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Enter your name!</h5>
+                          <form>
+                            <div class="form-group">
+                              <input type="name" class="form-control" id="name-input" aria-describedby="nameHelp" placeholder="Enter Name">
+                            </div>
+                          </form>
+                          <a href="#" class="btn btn-info">Submit</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Link to your picture!</h5>
+                          <form>
+                            <div class="form-group">
+                              <input type="link" class="form-control" id="pic-input" aria-describedby="pictureHelp" placeholder="Link Here">
+                            </div>
+                          </form>
+                          <a href="#" class="btn btn-info">Submit</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    </div>
+
+    <br> <br>
+
+    <div class="container">
             <div class="input-group mb-3">
 
                 <div class="container">
                     <h1>Question 1:</h1>
-                    <h4>You consider yourself very creative</h4>
+                    <h4>You consider yourself to be very creative</h4>
                 </div>
-
-                    <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01">Question 1</label>
-                    </div>
 
                     <select class="custom-select" id="question1">
                       <option selected>Choose your option</option>
@@ -48,10 +80,6 @@
                     <h4>You consider yourself to be sensitive</h4>
                 </div>
 
-                    <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01">Question 2</label>
-                    </div>
-
                     <select class="custom-select" id="question2">
                       <option selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -72,10 +100,6 @@
                     <h1>Question 3:</h1>
                     <h4>You love yourself</h4>
                 </div>
-
-                    <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01">Question 3</label>
-                    </div>
 
                     <select class="custom-select" id="question3">
                       <option selected>Choose your option</option>
@@ -98,10 +122,6 @@
                     <h4>You feel you are the center of the universe</h4>
                 </div>
 
-                    <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01">Question 4</label>
-                    </div>
-
                     <select class="custom-select" id="question4">
                       <option selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -122,10 +142,6 @@
                     <h1>Question 5:</h1>
                     <h4>You consider that people can rarely hurt you</h4>
                 </div>
-
-                    <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01">Question 5</label>
-                    </div>
 
                     <select class="custom-select" id="question5">
                       <option selected>Choose your option</option>
@@ -148,10 +164,6 @@
                     <h4>You rely on your experiences rather than your intuition</h4>
                 </div>
 
-                    <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01">Question 6</label>
-                    </div>
-
                     <select class="custom-select" id="question6">
                       <option selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -172,10 +184,6 @@
                     <h1>Question 7:</h1>
                     <h4>You don't listen to people less successful than you</h4>
                 </div>
-
-                    <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01">Question 7</label>
-                    </div>
 
                     <select class="custom-select" id="question7">
                       <option selected>Choose your option</option>
@@ -198,10 +206,6 @@
                     <h4>It is often difficult for you to relate to other people’s feelings.</h4>
                 </div>
 
-                    <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01">Question 8</label>
-                    </div>
-
                     <select class="custom-select" id="question8">
                       <option selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -222,10 +226,6 @@
                     <h1>Question 9:</h1>
                     <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
                 </div>
-
-                    <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01">Question 9</label>
-                    </div>
 
                     <select class="custom-select" id="question9">
                       <option selected>Choose your option</option>
@@ -248,10 +248,6 @@
                     <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
                 </div>
 
-                    <div class="input-group-prepend">
-                      <label class="input-group-text" for="inputGroupSelect01">Question 10</label>
-                    </div>
-
                     <select class="custom-select" id="question10">
                       <option selected>Choose your option</option>
                       <option value="1">1 (Strongly Disagree)</option>
@@ -261,5 +257,34 @@
                       <option value="5">5 (Strongly Agree)</option>
                     </select>
             </div>
+            
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+              Submit
+            </button>
     </div>
+
+    <br>
+
+
+
+    <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
     
